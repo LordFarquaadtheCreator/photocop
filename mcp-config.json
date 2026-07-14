@@ -1,0 +1,10 @@
+{
+  "photocop-mcp": {
+    "command": "docker",
+    "args": ["run", "--rm", "-i", "-v", "/Users/farquaad:/Users/farquaad", "-v", "/Volumes:/Volumes", "photocop-mcp"]
+  },
+  "photocop-mcp-stdio": {
+    "command": "/Users/farquaad/agents-skills/mcps/photocop/photocop",
+    "args": ["mcp"]
+  }
+}
