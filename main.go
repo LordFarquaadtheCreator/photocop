@@ -1,6 +1,6 @@
 package main
 
-import "github.com/farquaad/photocop/cmd"
+import "github.com/LordFarquaadtheCreator/photocop/cmd"
 
 func main() {
 	cmd.Execute()
