@@ -1,0 +1,13 @@
+# binaries
+photocop
+*.app
+
+# build artifacts (built output only; dist_template/ is source)
+dist/
+
+# macOS
+.DS_Store
+
+# editor
+.vscode/
+.idea/

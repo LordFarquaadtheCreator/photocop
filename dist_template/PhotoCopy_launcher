@@ -1,0 +1,12 @@
+#!/bin/bash
+# Double-click entry: opens Terminal window and runs photocop interactively.
+SELF="$0"
+if [[ -L "$SELF" ]]; then SELF="$(readlink -f "$SELF")"; fi
+DIR="$(cd "$(dirname "$SELF")/.." && pwd)"
+BIN="$DIR/Resources/photocop"
+osascript <<APPLESCRIPT
+tell application "Terminal"
+    activate
+    do script "'$BIN' copy; echo; echo '--- photocop finished, press Enter to close ---'; read"
+end tell
+APPLESCRIPT
