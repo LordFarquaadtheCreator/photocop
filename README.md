@@ -58,18 +58,6 @@ go build -o photocop .
 ./build.sh   # produces dist/PhotoCopy.app
 ```
 
-## Docker
-
-```bash
-docker build -t photocop-mcp .
-docker run --rm -i \
-  -v /path/to/src:/src \
-  -v /path/to/dst:/dst \
-  photocop-mcp
-```
-
-Docker entrypoint is `photocop mcp` (server mode). Needs volume mounts for src/dst dirs.
-
 ## Dependencies
 
 - Go 1.25+

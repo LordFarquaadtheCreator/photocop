@@ -14,14 +14,6 @@ Single binary, two modes:
 go build -o photocop .
 ```
 
-## Docker
-
-```bash
-docker build -t photocop-mcp .
-```
-
-Needs volume mounts for src/dst dirs.
-
 ## Run
 
 ```bash
@@ -40,7 +32,6 @@ Needs volume mounts for src/dst dirs.
 | `cmd/mcp.go` | `mcp` subcommand — runs the MCP server |
 | `internal/mcpserver/server.go` | MCP server, tool handler |
 | `internal/mcpserver/server_test.go` | Handler + logic tests |
-| `Dockerfile` | Multi-stage Go build → Alpine runtime (entrypoint `photocop mcp`) |
 | `mcp-config.json` | MCP config snippet |
 | `build.sh` | macOS .app bundle packaging script |
 | `dist_template/` | .app bundle template (Info.plist, launcher) |
